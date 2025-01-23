@@ -1,21 +1,8 @@
-'use client';
-import { useParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+const Post = async ({ params }) => {
+  const { id } = await params;
 
-const Post = () => {
-  const { id } = useParams();
-  const [post, setPost] = useState(null);
-
-  useEffect(() => {
-    async function fetchData() {
-      const res = await fetch(
-        `https://jsonplaceholder.typicode.com/posts/${id}`
-      );
-      const data = await res.json();
-      setPost(data);
-    }
-    fetchData();
-  }, []);
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  const post = await res.json();
 
   return (
     <section className='container mx-auto p-8'>
