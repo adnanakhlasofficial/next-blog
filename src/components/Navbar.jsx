@@ -19,7 +19,7 @@ const Navbar = async () => {
               <Link href='/'>Home</Link>
             </li>
             <li>
-              <Link href='/'>Profile</Link>
+              <Link href='/profile'>Profile</Link>
             </li>
             {user ? (
               <>
