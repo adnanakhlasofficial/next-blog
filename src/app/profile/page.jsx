@@ -12,11 +12,11 @@ const Profile = async () => {
   }
 
   return (
-    <AuthProvider>
-      <div className='container mx-auto text-4xl font-bold py-6 px-8'>
-        Welcome to your profile!
-      </div>
-    </AuthProvider>
+    // <AuthProvider>
+    <div className='container mx-auto text-4xl font-bold py-6 px-8'>
+      Welcome to your profile!
+    </div>
+    // </AuthProvider>
   );
 };
 
