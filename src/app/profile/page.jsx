@@ -16,7 +16,7 @@ const Profile = async () => {
 
   return (
     <div className='container mx-auto text-4xl font-bold py-6 px-8'>
-      Welcome to your profile!
+      Welcome to your profile!!
     </div>
   );
 };
